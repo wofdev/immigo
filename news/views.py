@@ -58,6 +58,7 @@ class NewsAPIView(APIView):
                 pass
 
             # detach and save tag from news model data to use later
+            tags = None
             try:
                 tags = item['tags']
                 del item['tags']
